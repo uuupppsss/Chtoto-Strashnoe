@@ -4,12 +4,11 @@ using System.Runtime.CompilerServices;
 
 internal class DrawRobotCommand : IRobotCommand
 {
+    private Robot robot;
 
     public void Execute()
     {
-        
-        // нарисовать робота по его координатам
-        throw new NotImplementedException();
+        Paint.GetInstance().Graphics.FillEllipse(Brushes.BlueViolet, robot.roboX, robot.roboY, 5, 5);
     }
 }
 

@@ -9,6 +9,6 @@ internal class Robot
             instance = new Robot();
         return instance;
     }
-    public int X { get; set; }
-    public int Y { get; set; }
+    public int roboX { get; set; }
+    public int roboY { get; set; }
 }
